@@ -100,20 +100,8 @@ let topics =
 btn.addEventListener('click',function(){
 	var randomTopic = topics[Math.floor(Math.random() * topics.length)] ;
 	output.innerHTML= "<h3>" + randomTopic + " </h3>";
-	const timeLeftDisplay = document.getElementById('time-left');
-	let timeLeft= 30
-	setInterval(function(){
-			if (timeLeft <=0) {
-				clearInterval(timeLeft= 0)
-
-			}
-			timeLeftDisplay.innerHTML = timeLeft;
-		
-
-			
-			timeLeft -=1
-		},1000)
-
+	
+	
 })
 
  
