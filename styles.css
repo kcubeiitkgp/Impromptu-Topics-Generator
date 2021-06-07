@@ -1,0 +1,30 @@
+html {
+    background-color: #E4E9FD;
+    background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);
+    min-height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background-attachment: fixed;
+}
+
+span {
+ margin:  auto;
+}
+
+#container {
+  background-color: white;
+  border: 3px solid black;
+  height:  275px;
+  width: 750px;
+  margin: 0 auto ;
+  text-align: center;
+}
+
+#output{
+  margin: 25px auto;
+  font-size:  26 px;
+  color:  black;
+}
+
+#btn{
+  margin-top : 15px ;
+}

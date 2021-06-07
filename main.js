@@ -1,0 +1,119 @@
+let btn = document.getElementById('btn');
+let output = document.getElementById('output');
+let timer=document.getElementById('timer');
+let topics = 
+   [
+	'What has been the most terrifying moment of your life so far ?',
+	'What is your happiest memory ?',
+	'What are you most excited about in your life right now-today ?',
+	'The most successful person you know',
+	'Wisdom vs Intelligence',
+	'What is the biggest obstacle that stands in our way right now ?',
+	'What music do you listen to lift your spirits when you are feeling down ?',
+	'Do you want to be rich ? ',
+	'What is something you know you do differently than most people ?' ,
+	'What do you have that you can not live without ?' ,
+	'As a child , what did you want to be when you grew up ?' ,
+	'Are you happy with yourself ?' ,
+	'What do you sometimes pretend to understand that you really do not ? ' ,
+	'How would you spend your ideal day ? ' ,
+	'Share something unusual about yourself' ,
+	'What word best describes the way you have spent the last month of your life ?' ,
+	'What have you worked hard on and loved every minute of it ?' ,
+	' What have you worked hard on even when you did not like it ?' ,
+	'What is the nicest thing someone has ever done for you ?' ,
+	'What bad habits do you want to break ?' ,
+	'What do you think that you are better at than most of the people ?' ,
+	'Should you do what you love or love what you do ?' ,
+	'What is the strongest person you know ?' ,
+	'What was the last time you felt lucky ?' ,
+	'What is the most defining moment of your life so far ?' ,
+	'When you have a random hour of free time, what do you usually do ?' ,
+	'Personal finanace advice' ,
+	'What makes life easier ?' ,
+	'What questions do you often ask yourself ?' ,
+	'What one thing do you want to change in this world ?',
+	'What is the most recent dream you remember having while sleeping ?' ,
+	'Why do you matter ?',
+	'What have you read online recently that inspired you ?' ,
+	'What are you sure of in your life ?',
+	'What is the number one quality that makes a person successful ?' ,
+	'What was your last major accomplishment ?' ,
+	'What is your most prized possesion ?' ,
+	'What is worse failing or never trying ?',
+	'What are you acertain about ?' ,
+	'What life lesson did you learn the hard way ?' ,
+	'What do you love to practice ?',
+	'What do you imagine yourself doing ten years from now ?' ,
+	'How do you spend majority of your free time ?' ,
+	'What do you miss the most from your childhood ?' ,
+	'What are your top three priorities ?' ,
+	'What is your favorite incident from your life that you enjoy sharing with others ?' ,
+	'What is a belief that you hold that many people disagree with ?' ,
+	'Who or what is the greatest enemy of mankind ?',
+	'Who is your role model ?' ,
+	'What can you do now that you were not capable of a year ago ?' ,
+	'What job would you never do no matter how much it paid ?' ,
+	'What do you want most ?' ,
+	'If you wanted to live one day of your life over again, what day would you choose ?' ,
+	'What are the three moral rules you will never break ?' ,
+	'What is your high school memory that you cherish even today ?' ,
+	'If you had 1 hour extra per day, what would you do ?' ,
+	'If you had a chance to go back to past and change one thing, what would that be ?' ,
+	'Who depends on you ?' ,
+	'What do you see when you look into the future ?',
+	'Is there such a thing as perfect ?' ,
+	'What is the one thing that will change the most in the next ten years ?' ,
+	'What is your biggest fear ?' ,
+	'What has fear of failure stopped you from doing ?' ,
+	'What confuses you ?' ,
+	'If you could message all the people around the world for once, what message would it be ?',
+	'What makes you proud ?' ,
+	'What is the biggest change that you have made in your life in the last year ?' ,
+	'If you could ask a person, alive or dead, only one question , who woukld you ask and what ?' ,
+	'Have you regretted something you did not say or do ? ' ,
+	'What do you love most about yourself ?' ,
+	'What is the one thing that you have not done that you really want to do ?' ,
+	'What looks so easy to do but is actually hard ?' ,
+	'If you move abroad, wat is the one thing that you will miss about India ?' ,
+	'Are professional athletes and actors paid too much ?' ,
+	'What do you know well enough to teach to others ?' ,
+	'If you had a chance to become a teacher, what would you teach ?' ,
+	'What is the least that you expect from others ?' ,
+	'What is your most favorite hobby ?' ,
+	'Do looks matter ?' ,
+	'What was the last thing that made you laugh loud ?' ,
+	'What can you over and over without getting bored ?' ,
+	'Is there ever a time when giving up makes sense ?' ,
+	'A person you would like to meet once in your lifetime' ,
+	'Three things you believe that everyone should do ',
+	'What is the best time for a kid to get a personal phone' ,
+	'Beliefs you had 5 years ago which have been proven wrong ?' ,
+	'Do you think academics and formal education are overhyped ?' ,
+	'Describe a show that you would watch on TV a kid' ,
+	'What do you think of money ?' ,
+	'How to make your favorite meal ?' ,
+  ];
+
+
+
+btn.addEventListener('click',function(){
+	var randomTopic = topics[Math.floor(Math.random() * topics.length)] ;
+	output.innerHTML= "<h3>" + randomTopic + " </h3>";
+	const timeLeftDisplay = document.getElementById('time-left');
+	let timeLeft= 30
+	setInterval(function(){
+			if (timeLeft <=0) {
+				clearInterval(timeLeft= 0)
+
+			}
+			timeLeftDisplay.innerHTML = timeLeft;
+		
+
+			
+			timeLeft -=1
+		},1000)
+
+})
+
+ 
