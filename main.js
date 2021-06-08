@@ -93,6 +93,45 @@ let topics =
 	'Describe a show that you would watch on TV a kid' ,
 	'What do you think of money ?' ,
 	'How to make your favorite meal ?' ,
+	'What is success ? ' ,
+	'Describe a turning point of your life ? ' ,
+	'What is the best advice your parents ever gave you ? ' ,
+	'If you had a single use time machine , would you go to past or future ? ' ,
+	'Describe your hometown or birthplace. ' ,
+	'If you had to be famous , what would you want it to be for ? ' ,
+	'What is the best book you have ever read ? ' ,
+	'If you get 1 cr rupees now , how would you spend it ? ' ,
+	'Are you a early riser or late sleeper? Would you rather be opposite? ' ,
+	'What has the COVID-19 pandemic taught us?' ,
+	'What goals have you set for you this year ?' ,
+	'What do you miss the most from your college life?' ,
+	'What is happiness? ' ,
+	'What can someone do to grab your attention?' ,
+	'What do you wish you spent more time doing five years ago?' ,
+	'What worries you about the future?' ,
+	'Who is a hero according to you ? ' ,
+	'Where or who do ytou turn to when you need good advice?' ,
+	'Should parents decide what should their child become in future?' ,
+	'What was a quick decision you once made that changed your life?' ,
+	'How are you pursuing your dreams right now ?' ,
+	'What thing have youu done lately that is worth remembering ? ' ,
+	'Are you more like yor mom or dad and in what way ? ' ,
+	'What do you wish you should have done differently? ' ,
+	'Any movie or web-series that you recently watched which was worth the time ?' ,
+	'What motivates to keep working hard ? ' ,
+	'What human quality do we need more of?' ,
+	'In one year from today, how do you think your life will be different?' ,
+	'What is the most important lesson that you learnt last year?',
+	'How are you different from most of the people ? ',
+	'What is the most enjoyable thing that you have done with your family members recently?',
+	'Which activities make you lose track of time?',
+	'What opportunities have you missed deliberately that you wished you have opted for ?',
+	'Are you happy with where you are in your life?' ,
+	'What is the last time you have helped someone selflessly?',
+	'Tell a story.',
+	'A moment in your life when you felt like giving up but did not do so' ,
+	
+	
   ];
 
 
@@ -100,8 +139,21 @@ let topics =
 btn.addEventListener('click',function(){
 	var randomTopic = topics[Math.floor(Math.random() * topics.length)] ;
 	output.innerHTML= "<h3>" + randomTopic + " </h3>";
-	
-	
+	const timeLeftDisplay = document.getElementById('time-left');
+	let timeLeft= 30
+	setInterval(function(){
+			if (timeLeft <=0) {
+				clearInterval(timeLeft= 0)
+
+			}
+			timeLeftDisplay.innerHTML = timeLeft;
+		
+
+			
+			timeLeft -=1
+		},1000)
+
 })
+
 
  
