@@ -130,6 +130,10 @@ let topics =
 	'What is the last time you have helped someone selflessly?',
 	'Tell a story.',
 	'A moment in your life when you felt like giving up but did not do so' ,
+	'Is success limited?',
+	'A recent positive change that you brought in your life',
+	'Expectations vs reality after entering college',
+	'Describe your ideal day',
 	
 	
   ];
