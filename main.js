@@ -134,6 +134,23 @@ let topics =
 	'A recent positive change that you brought in your life',
 	'Expectations vs reality after entering college',
 	'Describe your ideal day',
+	'Describe your favorite vacation',
+	'3 things that you learned in the past twelve months',
+	'3 things you wish to learn in the next three months',
+	'Describe a film or a web series which you have watched recently',
+	'What is fitness?',
+	'What is the one human quality that you hate the most?',
+	'What is the one human quality that you like the most?',
+	'What differentiates a successful and an unsuccessful person?',
+	'What is financial independence?',
+	'What are your strengths and weaknesses?',
+	'What makes your angry?',
+	'What makes you happy?',
+	
+
+
+
+
 	
 	
   ];
