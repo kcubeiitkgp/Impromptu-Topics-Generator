@@ -70,7 +70,7 @@ let topics =
 	'If you could message all the people around the world for once, what message would it be ?',
 	'What makes you proud ?' ,
 	'What is the biggest change that you have made in your life in the last year ?' ,
-	'If you could ask a person, alive or dead, only one question , who woukld you ask and what ?' ,
+	'If you could ask a person, alive or dead, only one question , who would you ask and what ?' ,
 	'Have you regretted something you did not say or do ? ' ,
 	'What do you love most about yourself ?' ,
 	'What is the one thing that you have not done that you really want to do ?' ,
