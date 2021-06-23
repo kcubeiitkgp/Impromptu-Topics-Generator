@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset= "UTF-8">
-<meta name="viewport" content= "width-device-width", initial-scale= "1.0">     
-	<link rel="stylesheet" href="styles.css">
-	<title>Impromptu by K^3</title>
-
-</head>
-<body>
-	<div id="container">
-		  <h3> Impromptu topics generator </h3>
-		<button id="btn"> Click for a new topic ! </button>
-		<div id="output"> Click the button to generate a new topic ! </div>
-		<h4 id="timer"> You can start in : <span id="time-left"> 00 </span> </h4>
-		
-
-	</div>
-	<script src="main.js"></script>
-
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width-device-width" , initial-scale="1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Impromptu by K^3</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1 id="title">Impromptu Topics Generator</h1>
+      <button id="btn">Click for a new Topic</button>
+      <div id="output">Click the button to generate a new topic !</div>
+      <div class="for-time">
+        <h2 id="timer">Countdown: <span id="time-left"> 00 </span></h2>
+        <h2>
+          Timer: <span id="seconds">00</span> :
+          <span id="tens">00</span>
+        </h4>
+      </div>
+      <button id="button-start">Start</button>
+      <button id="button-stop">Stop</button>
+      <button id="button-reset">Reset</button>
+    </div>
+    <div></div>
+    <script src="main.js"></script>
+  </body>
 </html>
