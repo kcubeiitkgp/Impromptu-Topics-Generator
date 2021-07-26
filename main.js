@@ -157,6 +157,7 @@ window.onload = function () {
     'What are your strengths and weaknesses?',
     'What makes your angry?',
     'What makes you happy?',
+    'Which superpower would you like to have ? ' ,
   ]
 
   var seconds = 00
