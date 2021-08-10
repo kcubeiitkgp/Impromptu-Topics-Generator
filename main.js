@@ -158,6 +158,59 @@ window.onload = function () {
     'What makes your angry?',
     'What makes you happy?',
     'Which superpower would you like to have ? ' ,
+     'Has there ever been a time where you needed to make a decision without knowing all of the details of a situation?',
+
+'Have you ever foreseen a problem before it happened? What did you do to prevent this from happening?',
+
+' Describe a color of your choice to someone who is blind .' ,
+
+'What steps do you take when addressing a problem?',
+
+'If you were the leader of your country, what changes would you make to the current state of your nation and why?',
+
+'In your opinion, what is the most fundamentally urgent issue in our world, and why do you feel this way?',
+
+'What single thing in your opinion causes the most harm to us as a society, and how is it avoidable?',
+
+'Can human nature ever be changed? If so, how should it be changed and why?',
+
+'If you could create only three laws for people to live by, what would they be and why?',
+
+'Do you believe the world could exist without the concept of material wealth? How would it be different than it is now?',
+
+'If you could choose a superpower for you , which one should it be ?',
+
+'Do we have a moral obligation to help those less fortunate than we are? Why or why not?',
+
+'What harsh truths about life do you prefer to consciously ignore, and why?',
+
+'If you had to either lie or speak truth everytime , which one would you prefer ?',
+
+'Is humanity inherently “good” or inherently “evil?” Why do you feel this way?',
+
+'Do you consider the effects of our words and actions on other people?',
+
+'How do you explain your favourite subject to a kid ?',
+
+'What did you learn from your college life ?',
+
+'Your vision or your hearing ; which one of the two would you choose if you had to choose any one of them?',
+
+'What is a good job according to you?',
+
+'If you are offered a holiday package to your preferred location, where would you like to go?',
+
+'Is peer pressure beneficial for the development of a student ?',
+
+'If you had a chance to build a startup , what category would it belong to?',
+
+'If you become the education minister of your country , what changes would you suggest in the school system?',
+
+'Does our technology connect us more, or isolate us more? Why do you feel this way?',
+
+'How is our perception of good and evil shaped by our films, books, and video games?',
+
+'Are you in the rat race and why ?',
   ]
 
   var seconds = 00
