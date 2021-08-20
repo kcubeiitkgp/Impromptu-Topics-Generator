@@ -233,7 +233,7 @@ window.onload = function () {
     'My favorite season is… because…',
     'My favorite summer holidays memory from childhood',
     'What is your favorite animal and why?',
-    '
+    
   ]
 
   var seconds = 00
