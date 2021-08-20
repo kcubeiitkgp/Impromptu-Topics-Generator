@@ -162,7 +162,7 @@ window.onload = function () {
     'What are your strengths and weaknesses?',
     'What makes your angry?',
     'What makes you happy?',
-    'Which superpower would you like to have ? ' ,
+    'What is something you would like to see in your lifetime and why?',
      'Has there ever been a time where you needed to make a decision without knowing all of the details of a situation?',
 
 'Have you ever foreseen a problem before it happened? What did you do to prevent this from happening?',
@@ -170,7 +170,12 @@ window.onload = function () {
 ' Describe a color of your choice to someone who is blind .' ,
 
 'What steps do you take when addressing a problem?',
-
+'If I were a super hero my superpower would be…',
+ 'A job I’d love to have',
+  '2 or 3 things I will never eat… because…',
+   'If I could only eat three foods forever',
+  'The best movie ever (2 or 3 reasons why)',
+'An important lesson I’ve learned',
 'If you were the leader of your country, what changes would you make to the current state of your nation and why?',
 
 'In your opinion, what is the most fundamentally urgent issue in our world, and why do you feel this way?',
@@ -196,8 +201,13 @@ window.onload = function () {
 'Do you consider the effects of our words and actions on other people?',
 
 'How do you explain your favourite subject to a kid ?',
+' What is development according to you?',
 
-'What did you learn from your college life ?',
+'Explain 3 lessons you’ve learned so far while attending college',
+ 'The personal achievement I’m most proud of is… (because…)',
+ 'The greatest gifts we can give others are…',
+ 'According to you ,what is underrated?',
+ 'According to you ,what is underrated?',
 
 'Your vision or your hearing ; which one of the two would you choose if you had to choose any one of them?',
 
@@ -216,6 +226,14 @@ window.onload = function () {
 'How is our perception of good and evil shaped by our films, books, and video games?',
 
 'Are you in the rat race and why ?',
+    'Are you worried about what people think about you?',
+    'A thing that you use in your daily life ',
+    'Explain 3 things you wish you knew before entering college',
+    'When I was a kid I was afraid of',
+    'My favorite season is… because…',
+    'My favorite summer holidays memory from childhood',
+    'What is your favorite animal and why?',
+    '
   ]
 
   var seconds = 00
