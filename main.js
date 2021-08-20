@@ -63,7 +63,7 @@ window.onload = function () {
     'What is a belief that you hold that many people disagree with ?',
     'Who or what is the greatest enemy of mankind ?',
     'Who is your role model ?',
-    'Are you a people-pleaser?,
+    'Are you a people-pleaser?,'
     'A recent video or an article which you watched or read which you think is worth sharing?',
     'What can you do now that you were not capable of a year ago ?',
     'What job would you never do no matter how much it paid ?',
