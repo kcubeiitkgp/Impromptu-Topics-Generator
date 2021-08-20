@@ -63,7 +63,7 @@ window.onload = function () {
     'What is a belief that you hold that many people disagree with ?',
     'Who or what is the greatest enemy of mankind ?',
     'Who is your role model ?',
-    'Are you a people-pleaser?,'
+    'Are you a people-pleaser?',
     'A recent video or an article which you watched or read which you think is worth sharing?',
     'What can you do now that you were not capable of a year ago ?',
     'What job would you never do no matter how much it paid ?',
@@ -207,7 +207,7 @@ window.onload = function () {
  'The personal achievement I’m most proud of is… (because…)',
  'The greatest gifts we can give others are…',
  'According to you ,what is underrated?',
- 'According to you ,what is underrated?',
+ 'According to you ,who is underrated?',
 
 'Your vision or your hearing ; which one of the two would you choose if you had to choose any one of them?',
 
