@@ -233,7 +233,16 @@ window.onload = function () {
     'My favorite season is… because…',
     'My favorite summer holidays memory from childhood',
     'What is your favorite animal and why?',
-    
+    'According to you,what is overrated?',
+    'According to you,who is overrated?',
+    'What seems easy to do but is actually hard?',
+    'Would you prefer to be deaf or blind right from your birth?',
+    'Which sport would you like to learn?',
+    'Which is the one thing that you have spent ridiculous amount of money on?',
+    'What are you known for among your friends or family?',
+    'What kind of weather do you like?',
+    'A thing in your life which you did in the past which makes no sense to you now',
+    'How would you explain ?',
   ]
 
   var seconds = 00
