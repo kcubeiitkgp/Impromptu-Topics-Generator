@@ -249,7 +249,7 @@ window.onload = function () {
     'Describe your college.',
     'What is the significance of life?',
     'What do you think about the government of your country?',
-    'An unusual thing that you saw or read recently'
+    'An unusual thing that you saw or read recently',
     'Interpret the quote:Time is money',
     'Who would you like to be your neighbour?',
     'What are the three most important inventions/discoveries which have changed the course of human life?',
