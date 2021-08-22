@@ -257,7 +257,7 @@ window.onload = function () {
     'Do you believe in God?Why?',
     'What is something that you feel is wrong with our generation?',
     'What is something that you feel we are colectively doing wrong?',
-    'Is lying ok?,
+    'Is lying ok?',
     'Is giving pocket money to children a good practice?',
     'What habit would you like to break?',
     'Would you rather be self-employed or salaried?',
