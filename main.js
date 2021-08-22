@@ -90,7 +90,6 @@ window.onload = function () {
     'Have you regretted something you did not say or do ? ',
     'What do you love most about yourself ?',
     'What is the one thing that you have not done that you really want to do ?',
-    'What looks so easy to do but is actually hard ?',
     'If you move abroad, wat is the one thing that you will miss about India ?',
     'Are professional athletes and actors paid too much ?',
     'What do you know well enough to teach to others ?',
@@ -163,69 +162,44 @@ window.onload = function () {
     'What makes your angry?',
     'What makes you happy?',
     'What is something you would like to see in your lifetime and why?',
-     'Has there ever been a time where you needed to make a decision without knowing all of the details of a situation?',
-
-'Have you ever foreseen a problem before it happened? What did you do to prevent this from happening?',
-
-' Describe a color of your choice to someone who is blind .' ,
-
-'What steps do you take when addressing a problem?',
-'If I were a super hero my superpower would be…',
- 'A job I’d love to have',
-  '2 or 3 things I will never eat… because…',
-   'If I could only eat three foods forever',
-  'The best movie ever (2 or 3 reasons why)',
-'An important lesson I’ve learned',
-'If you were the leader of your country, what changes would you make to the current state of your nation and why?',
-
-'In your opinion, what is the most fundamentally urgent issue in our world, and why do you feel this way?',
-
-'What single thing in your opinion causes the most harm to us as a society, and how is it avoidable?',
-
-'Can human nature ever be changed? If so, how should it be changed and why?',
-
-'If you could create only three laws for people to live by, what would they be and why?',
-
-'Do you believe the world could exist without the concept of material wealth? How would it be different than it is now?',
-
-'If you could choose a superpower for you , which one should it be ?',
-
-'Do we have a moral obligation to help those less fortunate than we are? Why or why not?',
-
-'What harsh truths about life do you prefer to consciously ignore, and why?',
-
-'If you had to either lie or speak truth everytime , which one would you prefer ?',
-
-'Is humanity inherently “good” or inherently “evil?” Why do you feel this way?',
-
-'Do you consider the effects of our words and actions on other people?',
-
-'How do you explain your favourite subject to a kid ?',
-' What is development according to you?',
-
-'Explain 3 lessons you’ve learned so far while attending college',
- 'The personal achievement I’m most proud of is… (because…)',
- 'The greatest gifts we can give others are…',
- 'According to you ,what is underrated?',
- 'According to you ,who is underrated?',
-
-'Your vision or your hearing ; which one of the two would you choose if you had to choose any one of them?',
-
-'What is a good job according to you?',
-
-'If you are offered a holiday package to your preferred location, where would you like to go?',
-
-'Is peer pressure beneficial for the development of a student ?',
-
-'If you had a chance to build a startup , what category would it belong to?',
-
-'If you become the education minister of your country , what changes would you suggest in the school system?',
-
-'Does our technology connect us more, or isolate us more? Why do you feel this way?',
-
-'How is our perception of good and evil shaped by our films, books, and video games?',
-
-'Are you in the rat race and why ?',
+    'Has there ever been a time where you needed to make a decision without knowing all of the details of a situation?',
+    'Have you ever foreseen a problem before it happened? What did you do to prevent this from happening?',
+    'Describe a color of your choice to someone who is blind .' ,
+    'What steps do you take when addressing a problem?',
+    'If I were a super hero my superpower would be…',
+    'A job I’d love to have',
+    '2 or 3 things I will never eat… because…',
+    'If I could only eat three foods forever',
+    'The best movie ever (2 or 3 reasons why)',
+    'An important lesson I’ve learned from my life',
+    'If you were the leader of your country, what changes would you make to the current state of your nation and why?',
+    'In your opinion, what is the most fundamentally urgent issue in our world, and why do you feel this way?',
+    'What single thing in your opinion causes the most harm to us as a society, and how is it avoidable?',
+    'Can human nature ever be changed? If so, how should it be changed and why?',
+    'If you could create only three laws for people to live by, what would they be and why?',
+    'Do you believe the world could exist without the concept of material wealth? How would it be different than it is now?',
+    'If you could choose a superpower for you , which one should it be ?',
+    'Do we have a moral obligation to help those less fortunate than we are? Why or why not?',
+    'What harsh truths about life do you prefer to consciously ignore, and why?',
+    'If you had to either lie or speak truth everytime , which one would you prefer ?',
+    'Is humanity inherently “good” or inherently “evil?” Why do you feel this way?',
+    'Do you consider the effects of our words and actions on other people?',
+    'How do you explain your favourite subject to a kid ?',
+    ' What is development according to you?',
+    'Explain 3 lessons you’ve learned so far while attending college',
+    'The personal achievement I’m most proud of is… (because…)',
+    'The greatest gifts we can give others are…',
+    'According to you ,what is underrated?',
+    'According to you ,who is underrated?',
+    'Your vision or your hearing ; which one of the two would you choose if you had to choose any one of them?',
+    'What is a good job according to you?',
+    'If you are offered a holiday package to your preferred location, where would you like to go?',
+    'Is peer pressure beneficial for the development of a student ?',
+    'If you had a chance to build a startup , what category would it belong to?',
+    'If you become the education minister of your country , what changes would you suggest in the school system?',
+    'Does our technology connect us more, or isolate us more? Why do you feel this way?',
+    'How is our perception of good and evil shaped by our films, books, and video games?',
+    'Are you in the rat race and why ?',
     'Are you worried about what people think about you?',
     'A thing that you use in your daily life ',
     'Explain 3 things you wish you knew before entering college',
@@ -242,7 +216,54 @@ window.onload = function () {
     'What are you known for among your friends or family?',
     'What kind of weather do you like?',
     'A thing in your life which you did in the past which makes no sense to you now',
-    'How would you explain ?',
+    'If you can go back in time and talk to yourself, what you would advise your younger self ?',
+    'What did you want to become as a child?',
+    'What is your phobia?',
+    'Who is a gentleman according to you?',
+    'What is difficult for you?',
+    'What is a thing that most of the people do not know about you but you would want yourself to be known as?',
+    'A recent incident where you were got angry but could not/ did not do anything',
+    'If you could be of any age for one week, what age and why?',
+    'Imagine that you are a mirror. Describe your life.',
+    'Imagine that you are a shoe. Describe your life.',
+    'Imagine that you are a tree. Describe your life.',
+    'Sell a flying car to the people present here.',
+    'Sell a speaking parrot to the people present here.',
+    'Talk about your favorite color',
+    'Where would you choose to live if you had to leave this country?'
+    'What is your favorite family tradition',
+    'What excites you about the future?',
+    'What movie made you laugh really hard?',
+    'Is it good to give money to the children who beg?What would you do?',
+    'What are you thankful for?',
+    'Who is funniest person you know?',
+    'What is the most difficult thing about getting older?',
+    'Which is the most beautiful place you have seen?'
+    'Who or what is sure to make you laugh?',
+    'What is something new that you would like to try this year?',
+    'What do you think of first when you wake up in the morning?',
+    'What would be the hardest thing about climbing Mt. Everest?',
+    'What gift would you like to receive on your birthday?',
+    'Sell a feature phone/keypad phone to the people present here.',
+    'Why do you think people behave the way they do ?',
+    'Describe your college.',
+    'What is the significance of life?',
+    'What do you think about the government of your country?',
+    'An unusual thing that you saw or read recently'
+    'Interpret the quote:Time is money',
+    'Who would you like to be your neighbour?',
+    'What are the three most important inventions/discoveries which have changed the course of human life?',
+    'What would you like to gift your parents?',
+    'Do you believe in God?Why?',
+    'What is something that you feel is wrong with our generation?',
+    'What is something that you feel we are colectively doing wrong?',
+    'Is lying ok?,
+    'Is giving pocket money to children a good practice?',
+    'What habit would you like to break?',
+    'Would you rather be self-employed or salaried?',
+    'What is the most ironical thing you have come accross?',
+    'What is something that you tried once and never want to try again?',
+    
   ]
 
   var seconds = 00
