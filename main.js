@@ -238,7 +238,7 @@ window.onload = function () {
     'What are you thankful for?',
     'Who is funniest person you know?',
     'What is the most difficult thing about getting older?',
-    'Which is the most beautiful place you have seen?'
+    'Which is the most beautiful place you have seen?',
     'Who or what is sure to make you laugh?',
     'What is something new that you would like to try this year?',
     'What do you think of first when you wake up in the morning?',
