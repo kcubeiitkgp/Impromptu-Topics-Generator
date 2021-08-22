@@ -230,7 +230,7 @@ window.onload = function () {
     'Sell a flying car to the people present here.',
     'Sell a speaking parrot to the people present here.',
     'Talk about your favorite color',
-    'Where would you choose to live if you had to leave this country?'
+    'Where would you choose to live if you had to leave this country?',
     'What is your favorite family tradition',
     'What excites you about the future?',
     'What movie made you laugh really hard?',
