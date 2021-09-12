@@ -277,7 +277,7 @@ window.onload = function () {
     'Would you rather be in high pain which last for a short time or low pain which last for long time?',
     'Three things everyone should do well',
     'An important lesson that I learned after doing a mistake',
-    'Things you can’t learn at school or college',
+    'Things you can not learn at school or college',
     'How to learn a thing that you recently learned?',
     'Three things that you are scared of',
     'Your favorite fictional character',
