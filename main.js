@@ -31,7 +31,6 @@ window.onload = function () {
     'Is it ok to steal?',
     'Have you stolen something in your life?',
     'What is your perfect vacation?',
-    '
     'Do you judge people from their first impression?',
     'How much money will be enough for you to live your dream life.Explain',
     'Has there been a moment in your life where you instantly lost respect for a person?',
