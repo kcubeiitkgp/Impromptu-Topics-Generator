@@ -273,6 +273,7 @@ window.onload = function () {
     'What are the three most important inventions/discoveries which have changed the course of human life?',
     'What would you like to gift your parents?',
     'Do you believe in God?Why?',
+    'Do you pray ? Why?',
     'What is something that you feel is wrong with our generation?',
     'What is something that you feel we are colectively doing wrong?',
     'Is lying ok?',
