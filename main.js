@@ -313,6 +313,14 @@ window.onload = function () {
     'If you were not in the field you are in currently, where do you imagine yourself ?',
     'What is easy but people complicate it?',
     'What are some of the movies that you think are a must-watch?',
+    'What is your renet purchase which you think provided you more value for the money?',
+    'What is the most important invention/discovery , according to you?',
+    'What are you outside of your current job/education?',
+    'What things did you believe 5 years ago which have been proven wrong for you?',
+    'What is the last thing that you have done selflessly for a stranger?',
+    'Describe your country',
+    'Describe your state',
+    
     
   ]
 
