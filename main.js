@@ -22,6 +22,7 @@ window.onload = function () {
     'What is the biggest obstacle that stands in our way right now ?',
     'What music do you listen to lift your spirits when you are feeling down ?',
     'Do you want to be rich ? ',
+    'Whenever you say yes to something, you are saying no to something else',
     'What is something you know you do differently than most people ?',
     'What do you have that you can not live without ?',
     'As a child , what did you want to be when you grew up ?',
