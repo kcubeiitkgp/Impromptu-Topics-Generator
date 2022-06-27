@@ -376,6 +376,7 @@ window.onload = function () {
   }
 
   btn.onclick = function () {
+    
     const timeLeftDisplay = document.getElementById('time-left')
 
     let timeLeft = 30
@@ -386,6 +387,9 @@ window.onload = function () {
       timeLeftDisplay.innerHTML = timeLeft
 
       timeLeft -= 1
+      
+      btn.onclick=function(){  clearInterval((timeLeft = 0) }
+      
     }, 1000)
   }
   btn.addEventListener('click', function () {
