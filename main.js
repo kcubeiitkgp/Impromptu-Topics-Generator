@@ -386,12 +386,11 @@ window.onload = function () {
       timeLeftDisplay.innerHTML = timeLeft
 
       timeLeft -= 1
-      
-       btn.onclick = function ()
-        {
-           clearInterval((timeLeft = 30))
-         }      
-      
+       
+      btn.onclick = function ()
+{
+    clearInterval((timeLeft = 30))
+}      
     }, 1000)
   }
   btn.addEventListener('click', function () {
