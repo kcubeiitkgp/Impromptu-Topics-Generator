@@ -18,6 +18,13 @@ window.onload = function () {
     'What are you most excited about in your life right now-today ?',
     'The most successful person you know',
     'Wisdom vs Knowledge',
+    'Smile, you are fine',
+
+'Focus only on what you can control',
+
+'Optimist approach in life',
+
+'Your views on Addiction',
     'Should you compare yourself with others?',
     'What is the biggest obstacle that stands in our way right now ?',
     'What music do you listen to lift your spirits when you are feeling down ?',
