@@ -358,6 +358,26 @@ window.onload = function () {
     'What is something that you learnt recently ?',
     'One productivity hack that you use?',
     'If you get a chance to operate on of the ministries of your country, what would you choose and why?',
+    "To improve our world, what are the 3 actions, you believe, we should take?",
+    "Should you talk to strangers?",
+    "An encounter with a stranger that turned out quite a good experience?",
+    "You can spoon-feed people, but you cannot chew and digest for them",
+    "What is fear ?",
+    "Do you follow a schedule or do things as they come?",
+    "What is the most useless invention you have come across? ",
+    "Share a supernatural experience that you have had in the past",
+    "What do you look for in a person before choosing them as your friend ?"
+    "What is the most delicious thing that you have eaten? Describe it .",
+    "Do you try to conquer your fears? How ?",
+    "What are you planning to do and what is stopping you from doing it?",
+    "What is easy but people perceive it to be difficult ?",
+    "Do you follow the news? What kind of news do you follow ?",
+    "What is something that you do regularly which has made you a better person overall? ",
+    "When is the last time you have helped someone? How?
+    "Do you like pets? Why/Why not?",
+    "Do you believe in karma ( As you sow, so shall you reap) ?",
+    "What movie can you watch over again and again?",
+    "Do you exercise? Why/ Why not ?"
     
   ]
 
