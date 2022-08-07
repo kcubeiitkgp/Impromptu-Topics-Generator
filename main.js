@@ -26,7 +26,7 @@ window.onload = function () {
     'Your views on Addiction',
     'If every job had the same respect, power and money, what job would you do and why?',
     'Should you compare yourself with others?',
-    'A subject that you have really liked during your college years?",
+    "A subject that you have really liked during your college years?",
     'What is the biggest obstacle that stands in our way right now ?',
     'What music do you listen to lift your spirits when you are feeling down ?',
     'Do you want to be rich ? ',
