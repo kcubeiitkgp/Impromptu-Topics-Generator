@@ -398,7 +398,7 @@ window.onload = function () {
     "What is the biggest fraud that you have came accross?",
     "What things must parents teach their kids?",
     "Why do most of the people fear public speaking?",
-    "The most useful things in life are free. Discuss",
+    "The most useful things in life are free. Discuss"
     
     
     
