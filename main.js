@@ -373,7 +373,7 @@ window.onload = function () {
     "What is easy but people perceive it to be difficult ?",
     "Do you follow the news? What kind of news do you follow ?",
     "What is something that you do regularly which has made you a better person overall? ",
-    "When is the last time you have helped someone? How?
+    "When is the last time you have helped someone? How?",
     "Do you like pets? Why/Why not?",
     "Do you believe in karma ( As you sow, so shall you reap) ?",
     "What movie can you watch over again and again?",
