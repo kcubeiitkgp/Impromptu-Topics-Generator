@@ -362,7 +362,7 @@ window.onload = function () {
     'Do you follow a schedule or do things as they come?',
     'What is the most useless invention you have come across?',
     'Share a supernatural experience that you have had in the past',
-    'What do you look for in a person before choosing them as your friend ?'
+    'What do you look for in a person before choosing them as your friend ?',
     'What is the most delicious thing that you have eaten? Describe it .',
     'Do you try to conquer your fears? How ?',
     'What are you planning to do and what is stopping you from doing it?',
