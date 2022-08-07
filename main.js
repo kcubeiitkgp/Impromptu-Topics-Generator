@@ -18,11 +18,15 @@ window.onload = function () {
     'What are you most excited about in your life right now-today ?',
     'The most successful person you know',
     'Wisdom vs Knowledge',
+    "What is wealth?",
+    
     'Smile, you are fine',
     'Focus only on what you can control',
     'Optimistic approach in life',
     'Your views on Addiction',
+    'If every job had the same respect, power and money, what job would you do and why?',
     'Should you compare yourself with others?',
+    'A subject that you have really liked during your college years?",
     'What is the biggest obstacle that stands in our way right now ?',
     'What music do you listen to lift your spirits when you are feeling down ?',
     'Do you want to be rich ? ',
@@ -248,6 +252,7 @@ window.onload = function () {
     'What seems easy to do but is actually hard?',
     'Would you prefer to be deaf or blind right from your birth?',
     'Which sport would you like to learn?',
+    "What kind of songs do you generally listen to and why?",
     'Which is the one thing that you have spent ridiculous amount of money on?',
     'What are you known for among your friends or family?',
     'What kind of weather do you like?',
@@ -377,7 +382,28 @@ window.onload = function () {
     "Do you like pets? Why/Why not?",
     "Do you believe in karma ( As you sow, so shall you reap) ?",
     "What movie can you watch over again and again?",
-    "Do you exercise? Why/ Why not ?"
+    "Do you exercise? Why/ Why not ?",
+    "Do you have any skill/talent that most of the people do not have?",
+    "Don't judge a book by its cover",
+    "Whether you think you can or you can't , you are right- Henry Ford",
+    "Do you play any sport? Why?",
+    "Justify the purpose of any movie/web-series villain",
+    "Who has been the most influential person in your life and why?",
+    "What have you recently explored/ learned about and found it fascinating/interesting?",
+    "What are some of the things that a student should do during their college life?",
+    "If you were not a human, what living organism would you want to be?",
+    "What comes to your mind when you hear the word discipline?",
+    "The most difficult thing you have ever done",
+    "Have you ever been a victim of fraud? Share your experience?",
+    "What is the biggest fraud that you have came accross?",
+    "What things must parents teach their kids?",
+    "Why do most of the people fear public speaking?",
+    "The most useful things in life are free. Discuss",
+    
+    
+    
+    
+    
     
   ]
 
