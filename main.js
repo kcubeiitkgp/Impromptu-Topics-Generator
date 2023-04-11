@@ -3,7 +3,7 @@ window.onload = function () {
   let output = document.getElementById('output')
   let timer = document.getElementById('timer')
 
- let topics = require('./topics.js');
+  let topics = require('./topics.js')
 
   var seconds = 00
   var tens = 00
@@ -55,24 +55,23 @@ window.onload = function () {
     }
   }
 
+  let intervalId // Added this variable to hold the interval id
+
   btn.onclick = function () {
     const timeLeftDisplay = document.getElementById('time-left')
 
     let timeLeft = 30
-    setInterval(function () {
+    clearInterval(intervalId) // Clear any previous interval
+    intervalId = setInterval(function () {
       if (timeLeft <= 0) {
-        clearInterval((timeLeft = 0))
+        clearInterval(intervalId) // Clear the interval when the time runs out
       }
       timeLeftDisplay.innerHTML = timeLeft
 
       timeLeft -= 1
-       
-      btn.onclick = function ()
-{
-    clearInterval((timeLeft = 30))
-}      
     }, 1000)
   }
+
   btn.addEventListener('click', function () {
     var randomTopic = topics[Math.floor(Math.random() * topics.length)]
     output.innerHTML = '<h1>' + randomTopic + ' </h1>'
