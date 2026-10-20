@@ -1,4 +1,4 @@
-window.topics [
+window.topics = [
   'What has been the most terrifying moment of your life so far ?',
     'If you could go back in time and change one thing in your life, what would it be and why?',
     'What is the best advice you have ever received?',
