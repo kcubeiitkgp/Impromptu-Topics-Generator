@@ -705,5 +705,5 @@ const topics [
   'The most useful things in life are free. Discuss'
 ];
 
-module.exports = topics;
+window.topics = topics;
     
