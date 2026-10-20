@@ -1,14 +1,20 @@
+
 html {
-  background-color: #e4e9fd;
-  background-image: -webkit-linear-gradient(65deg, #4776e6, #8e54e9);
   min-height: 100%;
-  font-family: monospace;
+  background-color: #e4e9fd;
+  background-image: linear-gradient(65deg, #4776e6, #8e54e9);
   background-attachment: fixed;
+  font-family: monospace;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
 }
 
 span {
   margin: auto;
-  color: blue;
+  color: #2400cc;
 }
 
 h2 {
@@ -16,59 +22,95 @@ h2 {
 }
 
 #container {
-  margin: 160px auto auto auto;
-  text-align: center;
-  height: 100%;
+  box-sizing: border-box;
   width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 70px 20px 40px;
+  text-align: center;
+}
+
+#title {
+  margin: 20px 0 65px;
 }
 
 #output {
   margin: 25px auto;
-  font-size: 20px; /* Fixed the typo */
-  color: black;
+  font-size: 20px;
+  color: #111;
+  overflow-wrap: anywhere;
+}
+
+#btn,
+#button-start,
+#button-stop,
+#button-reset {
+  background-color: transparent;
+  border: 2px solid #2400cc;
+  color: #111;
+  cursor: pointer;
+  transition: all 0.25s ease;
 }
 
 #btn {
   margin-top: 15px;
-  background-color: transparent;
-  border: 2px solid blue;
+  min-height: 47px;
+  padding: 0 14px;
   border-radius: 7px;
-  height: 47px;
 }
 
 #button-start,
 #button-stop,
 #button-reset {
-  background-color: transparent;
-  border: 2px solid blue;
-  border-radius: 3px;
-  height: 47px;
-  width: 62px;
-  margin-right: 20px;
-  margin-left: 34px;
-  text-align: center;
-}
-
-#title {
-  margin: 50px;
+  width: 75px;
+  min-height: 47px;
+  margin: 0 12px;
+  border-radius: 4px;
 }
 
 .for-time {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
 
 .for-time > div {
-  margin-right: 50px;
+  margin: 0 10px;
 }
 
+#btn:hover,
 #button-start:hover,
 #button-stop:hover,
-#button-reset:hover,
-#btn:hover {
-  color: #eff171 !important;
-  border-radius: 10px;
-  border-color: #f5f5f5 !important;
-  transition: all 0.3s ease 0s;
+#button-reset:hover {
+  color: #fff;
+  background-color: #2400cc;
+  border-color: #fff;
+  border-radius: 8px;
+}
+
+button:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+  #container {
+    padding-top: 45px;
+  }
+
+  #title {
+    margin-bottom: 45px;
+  }
+
+  #output {
+    font-size: 18px;
+  }
+
+  #button-start,
+  #button-stop,
+  #button-reset {
+    margin: 5px;
+  }
 }
