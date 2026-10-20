@@ -224,7 +224,7 @@ window.topics = [
 'You are the sum of content you consume',
 'You can\'t heal if you keep pretending you\'re not hurt',
 'You can\'t learn from your mistakes if you do not accept them',
-'You\'re not entitled to anything.'
+'You\'re not entitled to anything.',
    'What has been the most terrifying moment of your life so far ?',
     'What is your happiest memory ?',
     'What are you most excited about in your life right now-today ?',
