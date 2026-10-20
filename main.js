@@ -1,79 +1,77 @@
+
 window.onload = function () {
-  let btn = document.getElementById('btn')
-  let output = document.getElementById('output')
-  let timer = document.getElementById('timer')
+  const btn = document.getElementById('btn');
+  const output = document.getElementById('output');
+  const topics = require('./topics.js');
 
-  let topics = require('./topics.js')
+  const timeLeftDisplay = document.getElementById('time-left');
+  const appendTens = document.getElementById('tens');
+  const appendSeconds = document.getElementById('seconds');
 
-  var seconds = 00
-  var tens = 00
-  var appendTens = document.getElementById('tens')
-  var appendSeconds = document.getElementById('seconds')
-  var buttonStart = document.getElementById('button-start')
-  var buttonStop = document.getElementById('button-stop')
-  var buttonReset = document.getElementById('button-reset')
-  var Interval
+  const buttonStart = document.getElementById('button-start');
+  const buttonStop = document.getElementById('button-stop');
+  const buttonReset = document.getElementById('button-reset');
 
+  let seconds = 0;
+  let tens = 0;
+  let stopwatchInterval = null;
+  let countdownInterval = null;
+
+  // Stopwatch
   buttonStart.onclick = function () {
-    clearInterval(Interval)
-    Interval = setInterval(startTimer, 1000)
-  }
+    if (stopwatchInterval !== null) return;
+
+    stopwatchInterval = setInterval(function () {
+      tens++;
+
+      if (tens >= 60) {
+        seconds++;
+        tens = 0;
+      }
+
+      appendTens.textContent = String(tens).padStart(2, '0');
+      appendSeconds.textContent = String(seconds).padStart(2, '0');
+    }, 1000);
+  };
 
   buttonStop.onclick = function () {
-    clearInterval(Interval)
-  }
+    clearInterval(stopwatchInterval);
+    stopwatchInterval = null;
+  };
 
   buttonReset.onclick = function () {
-    clearInterval(Interval)
-    tens = '00'
-    seconds = '00'
-    appendTens.innerHTML = tens
-    appendSeconds.innerHTML = seconds
-  }
+    clearInterval(stopwatchInterval);
+    stopwatchInterval = null;
+    seconds = 0;
+    tens = 0;
+    appendTens.textContent = '00';
+    appendSeconds.textContent = '00';
+  };
 
-  function startTimer() {
-    tens++
-
-    if (tens <= 9) {
-      appendTens.innerHTML = '0' + tens
-    }
-
-    if (tens > 9) {
-      appendTens.innerHTML = tens
-    }
-
-    if (tens > 59) {
-      console.log('seconds')
-      seconds++
-      appendSeconds.innerHTML = '0' + seconds
-      tens = 0
-      appendTens.innerHTML = '0' + 0
-    }
-
-    if (seconds > 9) {
-      appendSeconds.innerHTML = seconds
-    }
-  }
-
-  let intervalId // Added this variable to hold the interval id
-
+  // Countdown and random topic
   btn.onclick = function () {
-    const timeLeftDisplay = document.getElementById('time-left')
+    const randomTopic =
+      topics[Math.floor(Math.random() * topics.length)];
 
-    let timeLeft = 30
-    clearInterval(intervalId) // Clear any previous interval
-    intervalId = setInterval(function () {
+    output.innerHTML = '';
+    const heading = document.createElement('h1');
+    heading.textContent = randomTopic;
+    output.appendChild(heading);
+
+    clearInterval(countdownInterval);
+
+    let timeLeft = 30;
+    timeLeftDisplay.textContent = timeLeft;
+
+    countdownInterval = setInterval(function () {
+      timeLeft--;
+
+      timeLeftDisplay.textContent = timeLeft;
+
       if (timeLeft <= 0) {
-        clearInterval(intervalId) // Clear the interval when the time runs out
+        clearInterval(countdownInterval);
+        countdownInterval = null;
       }
-      timeLeftDisplay.innerHTML = timeLeft
-
-      timeLeft -= 1
-    }, 1000)
-  }
-
-  btn.addEventListener('click', function () {
-    var randomTopic = topics[Math.floor(Math.random() * topics.length)]
-    output.innerHTML = '<h1>' + randomTopic + ' </h1>'
-  })
-}
+    }, 1000);
+  };
+};
