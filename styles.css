@@ -1,116 +1,185 @@
 
-html {
-  min-height: 100%;
-  background-color: #e4e9fd;
-  background-image: linear-gradient(65deg, #4776e6, #8e54e9);
-  background-attachment: fixed;
-  font-family: monospace;
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #0f172a;
+  --text: #f8fafc;
+  --muted: #a8b3c7;
+  --border: #334155;
+  --accent-blue: #60a5fa;
+  --accent-purple: #a78bfa;
 }
 
 body {
   margin: 0;
   min-height: 100vh;
-}
-
-span {
-  margin: auto;
-  color: #2400cc;
-}
-
-h2 {
-  margin-right: 20px;
+  background:
+    radial-gradient(
+      circle at 15% 10%,
+      rgba(59, 130, 246, 0.08),
+      transparent 35%
+    ),
+    var(--background);
+  color: var(--text);
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
 }
 
 #container {
-  box-sizing: border-box;
   width: 100%;
+  max-width: 950px;
   min-height: 100vh;
   margin: 0 auto;
-  padding: 70px 20px 40px;
+  padding: 55px 24px;
   text-align: center;
 }
 
 #title {
-  margin: 20px 0 65px;
+  margin: 20px 0 50px;
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 750;
+  letter-spacing: -1.5px;
 }
 
-#output {
-  margin: 25px auto;
-  font-size: 20px;
-  color: #111;
-  overflow-wrap: anywhere;
-}
-
-#btn,
-#button-start,
-#button-stop,
-#button-reset {
-  background-color: transparent;
-  border: 2px solid #2400cc;
-  color: #111;
+button {
+  padding: 13px 20px;
+  min-height: 46px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #1e293b;
+  color: var(--text);
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
   cursor: pointer;
-  transition: all 0.25s ease;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+button:hover {
+  background: #293750;
+  border-color: var(--accent-blue);
+  transform: translateY(-2px);
+}
+
+button:focus-visible {
+  outline: 2px solid var(--accent-blue);
+  outline-offset: 4px;
 }
 
 #btn {
-  margin-top: 15px;
-  min-height: 47px;
-  padding: 0 14px;
-  border-radius: 7px;
+  background: linear-gradient(100deg, #3b82f6, #8b5cf6);
+  border: none;
+  color: white;
 }
 
-#button-start,
-#button-stop,
-#button-reset {
-  width: 75px;
-  min-height: 47px;
-  margin: 0 12px;
-  border-radius: 4px;
+#btn:hover {
+  background: linear-gradient(100deg, #2563eb, #7c3aed);
+}
+
+#output {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 150px;
+  margin: 30px auto;
+  padding: 25px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: rgba(30, 41, 59, 0.55);
+  color: var(--text);
+  font-size: clamp(18px, 2.5vw, 24px);
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+#output h1 {
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
 }
 
 .for-time {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  gap: 15px;
+  gap: 16px;
+  margin: 30px 0;
 }
 
-.for-time > div {
-  margin: 0 10px;
+.for-time h2 {
+  margin: 0;
+  padding: 16px 20px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: rgba(30, 41, 59, 0.65);
+  color: var(--muted);
+  font-size: 16px;
+  font-weight: 500;
 }
 
-#btn:hover,
-#button-start:hover,
-#button-stop:hover,
-#button-reset:hover {
-  color: #fff;
-  background-color: #2400cc;
-  border-color: #fff;
-  border-radius: 8px;
+.for-time span {
+  color: var(--accent-blue);
+  font-weight: 750;
+  font-variant-numeric: tabular-nums;
 }
 
-button:focus-visible {
-  outline: 3px solid #fff;
-  outline-offset: 3px;
+.timer-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.timer-buttons button {
+  min-width: 85px;
+}
+
+#button-start {
+  border-color: #3b82f6;
+}
+
+#button-stop {
+  border-color: #8b5cf6;
+}
+
+#button-reset {
+  border-color: #64748b;
 }
 
 @media (max-width: 600px) {
   #container {
-    padding-top: 45px;
+    padding: 35px 18px;
   }
 
   #title {
-    margin-bottom: 45px;
+    margin-bottom: 35px;
+    letter-spacing: -0.8px;
   }
 
   #output {
-    font-size: 18px;
+    min-height: 130px;
+    padding: 18px;
   }
 
-  #button-start,
-  #button-stop,
-  #button-reset {
-    margin: 5px;
+  .for-time {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .for-time h2 {
+    font-size: 15px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
   }
 }
