@@ -5,122 +5,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Impromptu by K^3</title>
-
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      min-height: 100vh;
-      font-family: monospace;
-      background: linear-gradient(65deg, #4776e6, #8e54e9);
-      background-attachment: fixed;
-      color: #111;
-    }
-
-    #container {
-      width: 100%;
-      max-width: 900px;
-      margin: auto;
-      padding: 70px 20px 40px;
-      text-align: center;
-    }
-
-    #title {
-      margin: 20px 0 55px;
-    }
-
-    button {
-      padding: 12px 18px;
-      min-height: 45px;
-      border: 2px solid #2400cc;
-      border-radius: 7px;
-      background: transparent;
-      color: #111;
-      font-family: inherit;
-      font-size: 15px;
-      cursor: pointer;
-      transition: 0.25s ease;
-    }
-
-    button:hover {
-      background: #2400cc;
-      color: white;
-      border-color: white;
-    }
-
-    button:focus-visible {
-      outline: 3px solid white;
-      outline-offset: 3px;
-    }
-
-    #output {
-      margin: 30px auto;
-      min-height: 70px;
-      font-size: 20px;
-      overflow-wrap: anywhere;
-    }
-
-    .for-time {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px 40px;
-      margin: 30px 0;
-    }
-
-    .for-time h2 {
-      margin: 10px 0;
-    }
-
-    .timer-buttons {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-
-    .timer-buttons button {
-      min-width: 80px;
-    }
-
-    @media (max-width: 600px) {
-      #container {
-        padding-top: 40px;
-      }
-
-      #title {
-        margin-bottom: 35px;
-      }
-
-      #output {
-        font-size: 18px;
-      }
-
-      .for-time {
-        gap: 10px 20px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
   <main id="container">
     <h1 id="title">Impromptu Topics Generator</h1>
 
     <button id="btn">Click for a New Topic</button>
-
     <div id="output" aria-live="polite">
       Click the button to generate a new topic!
     </div>
 
     <div class="for-time">
-      <h2>
-        Countdown: <span id="time-left">00</span>
-      </h2>
-
+      <h2>Countdown: <span id="time-left">00</span></h2>
       <h2>
         Timer: <span id="seconds">00</span> :
         <span id="tens">00</span>
@@ -134,122 +31,7 @@
     </div>
   </main>
 
-  <script>
-    const topics = [
-      "What does success mean to you?",
-      "What makes someone a good friend?",
-      "If you could learn any skill, what would it be?",
-      "What is one decision that changed your life?",
-      "Is failure necessary for success?",
-      "What does happiness mean to you?",
-      "If you could travel anywhere, where would you go?",
-      "What is the most valuable lesson you have learned?",
-      "Is it better to be honest or kind?",
-      "What makes a great leader?",
-      "Should everyone learn public speaking?",
-      "What would you do if you had an extra hour every day?",
-      "What is one habit you would like to develop?",
-      "Does money buy happiness?",
-      "What makes a person memorable?",
-      "Is technology bringing people closer together?",
-      "What would you tell your younger self?",
-      "What is more important: talent or hard work?",
-      "Can silence be powerful?",
-      "What does being confident mean to you?"
-    ];
-
-    const topicButton = document.getElementById("btn");
-    const output = document.getElementById("output");
-    const timeLeftDisplay = document.getElementById("time-left");
-    const secondsDisplay = document.getElementById("seconds");
-    const tensDisplay = document.getElementById("tens");
-
-    const startButton = document.getElementById("button-start");
-    const stopButton = document.getElementById("button-stop");
-    const resetButton = document.getElementById("button-reset");
-
-    let elapsed = 0;
-    let countdown = 0;
-    let stopwatchInterval = null;
-    let countdownInterval = null;
-    let lastTopicIndex = -1;
-
-    function updateStopwatch() {
-      const totalSeconds = Math.floor(elapsed / 100);
-      const hundredths = elapsed % 100;
-
-      secondsDisplay.textContent =
-        String(totalSeconds).padStart(2, "0");
-
-      tensDisplay.textContent =
-        String(hundredths).padStart(2, "0");
-    }
-
-    function stopCountdown() {
-      clearInterval(countdownInterval);
-      countdownInterval = null;
-    }
-
-    function startCountdown() {
-      stopCountdown();
-      countdown = 30;
-      timeLeftDisplay.textContent = String(countdown).padStart(2, "0");
-
-      countdownInterval = setInterval(() => {
-        countdown--;
-
-        timeLeftDisplay.textContent =
-          String(countdown).padStart(2, "0");
-
-        if (countdown <= 0) {
-          stopCountdown();
-        }
-      }, 1000);
-    }
-
-    topicButton.addEventListener("click", () => {
-      if (topics.length === 0) return;
-
-      let index;
-
-      do {
-        index = Math.floor(Math.random() * topics.length);
-      } while (topics.length > 1 && index === lastTopicIndex);
-
-      lastTopicIndex = index;
-      output.textContent = topics[index];
-
-      startCountdown();
-    });
-
-    startButton.addEventListener("click", () => {
-      if (stopwatchInterval !== null) return;
-
-      stopwatchInterval = setInterval(() => {
-        elapsed++;
-        updateStopwatch();
-      }, 10);
-    });
-
-    stopButton.addEventListener("click", () => {
-      clearInterval(stopwatchInterval);
-      stopwatchInterval = null;
-
-      stopCountdown();
-    });
-
-    resetButton.addEventListener("click", () => {
-      clearInterval(stopwatchInterval);
-      stopwatchInterval = null;
-
-      stopCountdown();
-
-      elapsed = 0;
-      countdown = 0;
-
-      updateStopwatch();
-      timeLeftDisplay.textContent = "00";
-    });
-  </script>
+  <script src="topics.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
