@@ -1,77 +1,97 @@
 
-window.onload = function () {
-  const btn = document.getElementById('btn');
-  const output = document.getElementById('output');
-  const topics = require('./topics.js');
+window.addEventListener("DOMContentLoaded", () => {
+  const topicButton = document.getElementById("btn");
+  const output = document.getElementById("output");
+  const timeLeftDisplay = document.getElementById("time-left");
+  const secondsDisplay = document.getElementById("seconds");
+  const tensDisplay = document.getElementById("tens");
 
-  const timeLeftDisplay = document.getElementById('time-left');
-  const appendTens = document.getElementById('tens');
-  const appendSeconds = document.getElementById('seconds');
+  const startButton = document.getElementById("button-start");
+  const stopButton = document.getElementById("button-stop");
+  const resetButton = document.getElementById("button-reset");
 
-  const buttonStart = document.getElementById('button-start');
-  const buttonStop = document.getElementById('button-stop');
-  const buttonReset = document.getElementById('button-reset');
+  const topics = window.topics || [];
 
-  let seconds = 0;
-  let tens = 0;
+  let elapsed = 0;
+  let countdown = 0;
   let stopwatchInterval = null;
   let countdownInterval = null;
+  let lastTopicIndex = -1;
 
-  // Stopwatch
-  buttonStart.onclick = function () {
+  function updateStopwatch() {
+    secondsDisplay.textContent =
+      String(Math.floor(elapsed / 100)).padStart(2, "0");
+
+    tensDisplay.textContent =
+      String(elapsed % 100).padStart(2, "0");
+  }
+
+  function stopCountdown() {
+    clearInterval(countdownInterval);
+    countdownInterval = null;
+  }
+
+  function startCountdown() {
+    stopCountdown();
+
+    countdown = 30;
+    timeLeftDisplay.textContent = "30";
+
+    countdownInterval = setInterval(() => {
+      countdown--;
+
+      timeLeftDisplay.textContent =
+        String(countdown).padStart(2, "0");
+
+      if (countdown <= 0) {
+        stopCountdown();
+      }
+    }, 1000);
+  }
+
+  topicButton.addEventListener("click", () => {
+    if (topics.length === 0) {
+      output.textContent = "No topics available. Check topics.js.";
+      return;
+    }
+
+    let index;
+
+    do {
+      index = Math.floor(Math.random() * topics.length);
+    } while (topics.length > 1 && index === lastTopicIndex);
+
+    lastTopicIndex = index;
+    output.textContent = topics[index];
+
+    startCountdown();
+  });
+
+  startButton.addEventListener("click", () => {
     if (stopwatchInterval !== null) return;
 
-    stopwatchInterval = setInterval(function () {
-      tens++;
+    stopwatchInterval = setInterval(() => {
+      elapsed++;
+      updateStopwatch();
+    }, 10);
+  });
 
-      if (tens >= 60) {
-        seconds++;
-        tens = 0;
-      }
-
-      appendTens.textContent = String(tens).padStart(2, '0');
-      appendSeconds.textContent = String(seconds).padStart(2, '0');
-    }, 1000);
-  };
-
-  buttonStop.onclick = function () {
+  stopButton.addEventListener("click", () => {
     clearInterval(stopwatchInterval);
     stopwatchInterval = null;
-  };
+    stopCountdown();
+  });
 
-  buttonReset.onclick = function () {
+  resetButton.addEventListener("click", () => {
     clearInterval(stopwatchInterval);
     stopwatchInterval = null;
-    seconds = 0;
-    tens = 0;
-    appendTens.textContent = '00';
-    appendSeconds.textContent = '00';
-  };
 
-  // Countdown and random topic
-  btn.onclick = function () {
-    const randomTopic =
-      topics[Math.floor(Math.random() * topics.length)];
+    stopCountdown();
 
-    output.innerHTML = '';
-    const heading = document.createElement('h1');
-    heading.textContent = randomTopic;
-    output.appendChild(heading);
+    elapsed = 0;
+    countdown = 0;
 
-    clearInterval(countdownInterval);
-
-    let timeLeft = 30;
-    timeLeftDisplay.textContent = timeLeft;
-
-    countdownInterval = setInterval(function () {
-      timeLeft--;
-
-      timeLeftDisplay.textContent = timeLeft;
-
-      if (timeLeft <= 0) {
-        clearInterval(countdownInterval);
-        countdownInterval = null;
-      }
-    }, 1000);
-  };
-};
+    updateStopwatch();
+    timeLeftDisplay.textContent = "00";
+  });
+});
